@@ -3,6 +3,8 @@ import time
 
 
 def task(name, repeat):
+    """Function which contains task performed by the thread
+    """
     print(name + " starts")
     inc = 1
     while inc <= repeat:
