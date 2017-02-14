@@ -3,7 +3,8 @@ import time
 
 
 class MyThread(threading.Thread):
-    """Custom class to define the functionality of the thread
+    """Custom class to define the functionality of the thread.
+    It over
     """
     def __init__(self, name, repeat):
         threading.Thread.__init__(self)
