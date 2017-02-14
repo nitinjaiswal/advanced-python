@@ -4,7 +4,8 @@ import time
 
 class MyThread(threading.Thread):
     """Custom class to define the functionality of the thread.
-    It over
+    It subclasses the Thread class and overrides the run function.
+    Run is the function which runs on calling start..
     """
     def __init__(self, name, repeat):
         threading.Thread.__init__(self)
@@ -24,6 +25,8 @@ class MyThread(threading.Thread):
 def main():
     thread1 = MyThread("Thread1", 3)
     thread2 = MyThread("Thread2", 4)
+
+    # start calls the run function
     thread1.start()
     thread2.start()
     print(thread1.getName())
